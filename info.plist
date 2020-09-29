@@ -29,9 +29,26 @@
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>time</string>
+	<string>Time Helper</string>
 	<key>objects</key>
 	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<true/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+				<key>transient</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>B8C4FD0D-D936-45A4-BE06-6F8A0DBA0033</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -81,23 +98,6 @@ $time-&gt;deal('{query}');</string>
 			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
 			<string>8CD7637C-E627-4FDF-905A-9398719E012E</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>autopaste</key>
-				<true/>
-				<key>clipboardtext</key>
-				<string>{query}</string>
-				<key>transient</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.clipboard</string>
-			<key>uid</key>
-			<string>B8C4FD0D-D936-45A4-BE06-6F8A0DBA0033</string>
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
