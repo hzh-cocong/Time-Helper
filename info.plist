@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string></string>
+	<key>category</key>
+	<string>Share</string>
+	<key>connections</key>
+	<dict>
+		<key>8CD7637C-E627-4FDF-905A-9398719E012E</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>B8C4FD0D-D936-45A4-BE06-6F8A0DBA0033</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>hzh</string>
+	<key>description</key>
+	<string>translate time and  timestamp</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>time</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>time</string>
+				<key>queuedelaycustom</key>
+				<integer>1</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<false/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>wait a minitue ...</string>
+				<key>script</key>
+				<string>require_once('src/Time.php');
+
+$time = new Time();
+$time-&gt;deal('{query}');</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>quick view time</string>
+				<key>title</key>
+				<string>time helper</string>
+				<key>type</key>
+				<integer>1</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>8CD7637C-E627-4FDF-905A-9398719E012E</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<true/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+				<key>transient</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>B8C4FD0D-D936-45A4-BE06-6F8A0DBA0033</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>hello cocong</string>
+	<key>uidata</key>
+	<dict>
+		<key>8CD7637C-E627-4FDF-905A-9398719E012E</key>
+		<dict>
+			<key>xpos</key>
+			<integer>165</integer>
+			<key>ypos</key>
+			<integer>225</integer>
+		</dict>
+		<key>B8C4FD0D-D936-45A4-BE06-6F8A0DBA0033</key>
+		<dict>
+			<key>xpos</key>
+			<integer>470</integer>
+			<key>ypos</key>
+			<integer>225</integer>
+		</dict>
+	</dict>
+	<key>variablesdontexport</key>
+	<array/>
+	<key>version</key>
+	<string>1.0.0</string>
+	<key>webaddress</key>
+	<string>www.cocong.cn</string>
+</dict>
+</plist>
