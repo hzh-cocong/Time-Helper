@@ -8,8 +8,9 @@
 
 class Time {
     public function __construct() {
-        ini_set('date.timezone','Asia/Shanghai');
+        //ini_set('date.timezone','Asia/Shanghai');
     }
+
     public function deal($query) {
         $query = trim($query);
 
@@ -388,37 +389,37 @@ class Time {
 
         if($year >= 1) {
             $list[] = array(
-                'title' => $time > $timestamp ? "{$year} years ago" : "in {$year} years",
+                'title' => $time > $timestamp ? "Tip: {$year} years ago" : "Tip: in {$year} years",
                 'arg' => $year,
             );
         } else if($month >= 1) {
             $list[] = array(
-                'title' => $time > $timestamp ? "{$month} months ago" : "in {$month} months",
+                'title' => $time > $timestamp ? "Tip: {$month} months ago" : "Tip: in {$month} months",
                 'arg' => $month,
             );
         } else if($week >= 1) {
             $list[] = array(
-                'title' => $time > $timestamp ? "{$week} weeks ago" : "in {$week} weeks",
+                'title' => $time > $timestamp ? "Tip: {$week} weeks ago" : "Tip: in {$week} weeks",
                 'arg' => $week,
             );
         } else if($day >= 1) {
             $list[] = array(
-                'title' => $time > $timestamp ? "{$day} days ago" : "in {$day} days",
+                'title' => $time > $timestamp ? "Tip: {$day} days ago" : "Tip: in {$day} days",
                 'arg' => $day,
             );
         } else if($hour >= 1) {
             $list[] = array(
-                'title' => $time > $timestamp ? "{$hour} hours ago" : "in {$hour} hours",
+                'title' => $time > $timestamp ? "Tip: {$hour} hours ago" : "Tip: in {$hour} hours",
                 'arg' => $hour,
             );
         } else if($minute >= 1) {
             $list[] = array(
-                'title' => $time > $timestamp ? "{$minute} minutes ago" : "in {$minute} minutes",
+                'title' => $time > $timestamp ? "Tip: {$minute} minutes ago" : "Tip: in {$minute} minutes",
                 'arg' => $minute,
             );
         } else {
             $list[] = array(
-                'title' => $time > $timestamp ? "{$second} seconds ago" : "in {$second} seconds",
+                'title' => $time > $timestamp ? "Tip: {$second} seconds ago" : "Tip: in {$second} seconds",
                 'arg' => $second,
             );
         }
