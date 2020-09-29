@@ -50,5 +50,5 @@ The version bellow 4 may cannot work.
 
 ## Download
 
-You can download from [Packal](http://www.packal.org/workflow/time-helper)，or click [here](https://github.com/hzh-cocong/Time-Helper/releases/download/v1.0.0/Time.Helper.alfredworkflow)
+You can download from [Packal](http://www.packal.org/workflow/time-helper) or click [here](https://github.com/hzh-cocong/Time-Helper/releases/download/v1.0.0/Time.Helper.alfredworkflow)
 
